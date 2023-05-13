@@ -1,5 +1,7 @@
 sudo apt update -y
 sudo apt upgrade -y
+pactl set-sink-mute 0 1
+echo "set-sink-mute 0 1" | sudo tee -a /etc/pulse/default.pa
 sudo apt remove bluez -y
 sudo apt install ufw tlp preload -y
 sudo apt autoremove -y
