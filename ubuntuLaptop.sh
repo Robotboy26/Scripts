@@ -1,7 +1,9 @@
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt remove bluez
-sudo apt install ufw tlp preload
+sudo apt remove bluez -y
+sudo apt install ufw tlp preload -y
+sudo apt autoremove -y
+sudo apt update -y
 sudo ufw enable
 sudo tlp start
 cd Downloads
