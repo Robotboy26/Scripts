@@ -1,5 +1,6 @@
 sudo apt update -y
 sudo apt upgrade -y
+sudo apt remove bluez
 sudo apt install ufw tlp preload
 sudo ufw enable
 sudo tlp start
