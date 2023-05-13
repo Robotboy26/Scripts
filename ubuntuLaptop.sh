@@ -11,4 +11,5 @@ wget https://cdimage.kali.org/kali-2023.1/kali-linux-2023.1-live-amd64.iso
 wget https://github.com/Robotboy26/Scripts/tree/main/requirements.txt
 pip install -r requirements.txt
 rm requirements.txt
+pip install --upgrade $(pip freeze | awk '{split($0, a, "=="); print a[1]}')
 
