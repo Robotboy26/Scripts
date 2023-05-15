@@ -22,5 +22,4 @@ wget https://raw.githubusercontent.com/Robotboy26/Scripts/main/requirements.txt
 sudo apt install meson # this is needed for d-bus python
 pip install -r requirements.txt
 rm requirements.txt
-pip install --upgrade $(pip freeze | awk '{split($0, a, "=="); print a[1]}')
 
