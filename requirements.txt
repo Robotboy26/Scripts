@@ -25,7 +25,6 @@ Python-docx
 Reportlab
 Fpdf
 Tweepy
-PyQt
 PyGTK
 PySimpleGUI
 Streamlit
