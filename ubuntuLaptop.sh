@@ -19,6 +19,7 @@ mkdir git
 #wget https://releases.ubuntu.com/22.04.2/ubuntu-22.04.2-desktop-amd64.iso?_ga=2.175045409.245219162.1683942175-600468238.1683942175
 #wget https://cdimage.kali.org/kali-2023.1/kali-linux-2023.1-live-amd64.iso
 wget https://github.com/Robotboy26/Scripts/tree/main/requirements.txt
+sudo apt install meson # this is needed for d-bus python
 pip install -r requirements.txt
 rm requirements.txt
 pip install --upgrade $(pip freeze | awk '{split($0, a, "=="); print a[1]}')
