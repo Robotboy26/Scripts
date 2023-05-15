@@ -2,6 +2,9 @@
 GH_USERNAME=<github-username>
 GH_TOKEN=<github-token>
 
+git config --global credential.helper store
+git ls-remote https://github.com
+
 # Set the base URL for the GitHub API
 API_URL="https://api.github.com"
 
