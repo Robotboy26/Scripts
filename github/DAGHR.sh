@@ -1,9 +1,8 @@
+sudo apt-get install expect -y
+
 # Set your GitHub username and access token
 GH_USERNAME=<github-username>
-GH_TOKEN=<github-token>
-
-git config --global credential.helper store
-git ls-remote https://github.com
+GH_TOKEN=<github-private-access-token>
 
 # Set the base URL for the GitHub API
 API_URL="https://api.github.com"
@@ -13,6 +12,13 @@ REPO_LIST=$(curl -sSL -H "Authorization: token $GH_TOKEN" "$API_URL/user/repos?t
 
 # Read the list of wanted repositories from the file
 WANTED_REPOS=$(cat wantedList.txt)
+
+git clone https://github.com/Robotboy26/myOS.git
+expect "Username for 'https://github.com':"
+send "$GH_USERNAME\r"
+expect "Password for 'https://$username@github.com':"
+send "$GH_TOKEN\r"
+interact
 
 # Loop through each repository in the list
 for REPO_URL in $WANTED_REPOS; do
