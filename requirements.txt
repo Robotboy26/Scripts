@@ -8,7 +8,7 @@ SciPy
 Seaborn
 NLTK
 Requests
-BeautifulSoup
+BeautifulSoup4
 Django
 Flask
 OpenCV
