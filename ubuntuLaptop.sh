@@ -9,7 +9,7 @@ sudo apt install -y code
 pactl set-sink-mute 0 1
 echo "set-sink-mute 0 1" | sudo tee -a /etc/pulse/default.pa
 sudo apt remove bluez -y
-sudo apt install ufw tlp preload python3-pip qemu qemu-systemx86_64 -y
+sudo apt install ufw tlp preload pip qemu qemu-systemx86_64 -y
 sudo apt autoremove -y
 sudo apt update -y
 sudo ufw enable
@@ -32,8 +32,11 @@ else
     wget -O kali.iso https://cdimage.kali.org/kali-2023.1/kali-linux-2023.1-live-amd64.iso
 fi
 
+mkdir VM
+cd VM
 wget https://raw.githubusercontent.com/Robotboy26/Scripts/main/VM/createVM.sh
 wget https://raw.githubusercontent.com/Robotboy26/Scripts/main/github/runVM.sh
+cd ..
 
 mkdir git
 cd git
