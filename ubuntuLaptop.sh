@@ -34,8 +34,22 @@ fi
 
 mkdir VM
 cd VM
-wget https://raw.githubusercontent.com/Robotboy26/Scripts/main/VM/createVM.sh
-wget https://raw.githubusercontent.com/Robotboy26/Scripts/main/github/runVM.sh
+echo "checking createVM.sh"
+if [ -f "createVM.sh" ]; then
+    echo "File exists skiping..."
+else
+    echo "File does not exist downloading..."
+    wget -O createVM.sh https://raw.githubusercontent.com/Robotboy26/Scripts/main/VM/createVM.sh
+fi
+
+echo "checking createVM.sh"
+if [ -f "runVM.sh" ]; then
+    echo "File exists skiping..."
+else
+    echo "File does not exist downloading..."
+    wget -O runVM.sh wget https://raw.githubusercontent.com/Robotboy26/Scripts/main/github/runVM.sh
+fi
+
 cd ..
 
 mkdir git
