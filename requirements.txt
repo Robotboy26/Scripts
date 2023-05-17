@@ -8,6 +8,7 @@ backoff==2.2.1
 beautifulsoup4==4.12.2
 blinker==1.4
 Brlapi==0.8.3
+build==0.10.0
 certifi==2020.6.20
 cffi==1.15.1
 chardet==4.0.0
