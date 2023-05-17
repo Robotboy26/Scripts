@@ -62,5 +62,3 @@ sudo apt install meson # this is needed for d-bus python ; in might not be neede
 python3 -m pip install -r requirements.txt
 rm requirements.txt
 steam
-
-# todo move iso download and check to createVM.sh
