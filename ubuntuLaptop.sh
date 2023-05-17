@@ -9,8 +9,6 @@ sudo apt install -y code
 pactl set-sink-mute 0 1
 echo "set-sink-mute 0 1" | sudo tee -a /etc/pulse/default.pa
 sudo apt remove bluez -y
-sudo apt install ufw tlp preload python3-pip -y
-sudo apt install qemu qemu-systemx86_64 nasm xterm -y
 sudo apt install ufw tlp preload pip git qemu qemu-system-x86 steam nasm xterm -y
 sudo apt autoremove -y
 sudo apt update -y
