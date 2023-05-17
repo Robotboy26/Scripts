@@ -1,0 +1,10 @@
+    Connect the additional drive to your system and ensure it is properly recognized and mounted.
+    Open the Steam client on your computer.
+    Click on "Steam" in the top-left corner of the Steam client window and select "Settings" from the dropdown menu.
+    In the Settings window, navigate to the "Downloads" tab.
+    Click on the "Steam Library Folders" button. This will open the Steam Library Folders window.
+    In the Steam Library Folders window, click on the "Add Library Folder" button.
+    Choose the new drive where you want to create the Steam library folder. Select the drive from the dropdown menu or click on "New Folder" to create a new folder on the drive.
+    Once you have selected the drive or created a new folder, click on the "Select" button.
+    The new drive or folder will now be added as a Steam library folder. You can specify this drive or folder as the installation location when installing new games.
+    Click "OK" to close the Steam Library Folders window.

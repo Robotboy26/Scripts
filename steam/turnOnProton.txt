@@ -1,0 +1,7 @@
+    Open the Steam client on your Linux system.
+    Click on "Steam" in the top-left corner of the Steam client window and select "Settings" from the dropdown menu.
+    In the Settings window, navigate to the "Steam Play" tab.
+    Check the box that says "Enable Steam Play for supported titles".
+    Optionally, you can check the box that says "Enable Steam Play for all other titles". This will allow you to attempt running all games through Proton, even if they are not officially supported.
+    In the "Advanced" section, you can choose the version of Proton you want to use for compatibility. You can select the latest version or choose a specific version from the dropdown menu.
+    Click "OK" to save the changes.
