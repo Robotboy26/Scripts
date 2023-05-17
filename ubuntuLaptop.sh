@@ -60,5 +60,7 @@ done
 
 sudo apt install meson # this is needed for d-bus python ; in might not be needed
 python3 -m pip install -r requirements.txt
+pip install build
+pip install twine
 rm requirements.txt
 steam
