@@ -58,6 +58,20 @@ for file in "CGHRL.sh" "DAGHR.sh" "wanted.txt" "requirements.txt"; do
     fi
 done
 
+# this is for vscode stuff
+# Check if the PATH variable already contains the necessary directories
+if [[ ":$PATH:" == *":/usr/bin:"* && ":$PATH:" == *":/bin:"* ]]; then
+  echo "PATH already includes /usr/bin and /bin"
+else
+  # Append /usr/bin and /bin to the PATH variable
+  echo 'export PATH="/usr/bin:/bin:$PATH"' >> ~/.bashrc  # Modify this line if using a different shell configuration file
+
+  # Reload the shell configuration file
+  source ~/.bashrc  # Modify this line if using a different shell configuration file
+
+  echo "PATH updated to include /usr/bin and /bin"
+fi
+
 sudo apt install meson # this is needed for d-bus python ; in might not be needed
 python3 -m pip install -r requirements.txt
 rm requirements.txt
