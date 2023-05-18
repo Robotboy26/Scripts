@@ -1,3 +1,4 @@
+cd ~
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y curl gpg
@@ -14,6 +15,7 @@ sudo apt autoremove -y
 sudo apt update -y
 sudo ufw enable
 sudo tlp start
+sudo systemctl enable tlp.service
 cd Downloads
 
 declare -A files=(
@@ -38,10 +40,11 @@ for file in "setupVM.sh" "createVM.sh" "runVM.sh"; do
     else
         echo "File does not exist, downloading..."
         wget -O "$file" "https://raw.githubusercontent.com/Robotboy26/Scripts/main/VM/$file"
+        sudo chmod u+x "$file"
     fi
 done
 
-./setupVM.sh
+xterm -e setupVM.sh & # not working why why why
 
 cd ..
 
@@ -55,6 +58,7 @@ for file in "CGHRL.sh" "DAGHR.sh" "wanted.txt" "requirements.txt"; do
     else
         echo "File does not exist, downloading..."
         wget -O "$file" "https://raw.githubusercontent.com/Robotboy26/Scripts/main/github/$file"
+        sudo chmod u+x "$file"
     fi
 done
 
