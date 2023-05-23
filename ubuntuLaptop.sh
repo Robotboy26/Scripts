@@ -44,8 +44,6 @@ for file in "setupVM.sh" "createVM.sh" "runVM.sh"; do
     fi
 done
 
-xterm -e setupVM.sh & # not working why why why
-
 cd ..
 
 mkdir -p git
