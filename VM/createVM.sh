@@ -7,5 +7,5 @@ for file in "ubuntu22.iso" "kali.iso"; do
     fi
 done
 
-qemu-img create -f qcow2 ubuntu_disk.qcow2 20G
+qemu-img create -f qcow2 ubuntu_disk.qcow2 40G
 qemu-system-x86_64 -m 12256 -boot d -cdrom ubuntu22.iso -drive file=ubuntu_disk.qcow2,format=qcow2 -enable-kvm
