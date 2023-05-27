@@ -1,5 +1,4 @@
 sudo apt install pip
-pip install --user devpi-client
 # Set the IP address of the Apt caching server
 apt_server_ip="192.168.1.65"
 
