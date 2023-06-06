@@ -1,1 +1,1 @@
-sudo service stop ssh
+sudo service ssh stop

@@ -1,1 +1,1 @@
-sudo service start ssh
+sudo service ssh start
