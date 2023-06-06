@@ -74,7 +74,7 @@ else
   echo "PATH updated to include /usr/bin and /bin"
 fi
 
-sudo apt install meson # this is needed for d-bus python ; in might not be needed
+sudo apt install meson -y # this is needed for d-bus python ; in might not be needed
 python3 -m pip install -r requirements.txt
 rm requirements.txt
 steam
