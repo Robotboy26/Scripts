@@ -15,7 +15,7 @@ cd ..
 sudo rm -r neovim
 cd ~/.config
 git clone https://github.com/Robotboy26/Scripts.git
-sudo cp Scripts/neovim/nvim .
+sudo cp -r Scripts/neovim/nvim .
 sudo rm -r Scripts
 cd /usr/local/lib/nvim
 sudo rm -r parser
