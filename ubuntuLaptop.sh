@@ -1,12 +1,6 @@
 cd ~
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install -y curl gpg
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
-sudo apt update -y
-sudo apt install -y code
 pactl set-sink-mute 0 1
 echo "set-sink-mute 0 1" | sudo tee -a /etc/pulse/default.pa
 sudo apt remove bluez -y
@@ -44,8 +38,6 @@ for file in "setupVM.sh" "createVM.sh" "runVM.sh"; do
     fi
 done
 
-xterm -e setupVM.sh & # not working why why why
-
 cd ..
 
 mkdir -p git
@@ -76,7 +68,7 @@ else
   echo "PATH updated to include /usr/bin and /bin"
 fi
 
-sudo apt install meson # this is needed for d-bus python ; in might not be needed
+sudo apt install meson -y # this is needed for d-bus python ; in might not be needed
 python3 -m pip install -r requirements.txt
 rm requirements.txt
 steam
