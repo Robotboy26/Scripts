@@ -7,7 +7,7 @@ rm -rf ~/.cache/nvim
 rm -rf /tmp/nvim
 find ~/ -name '*.swp' -type f -delete
 find ~/ -name '*.un~' -type f -delete
-sudo apt-get install ninja-build gettext cmake unzip curl
+sudo apt-get install ninja-build gettext cmake unzip curl -y
 git clone https://github.com/neovim/neovim
 cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
