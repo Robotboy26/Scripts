@@ -2,10 +2,10 @@ cd
 sudo apt update -y
 curl -fsS https://dlang.org/install.sh | bash -s dmd
 source ~/dlang/dmd-2.105.0/activate
-sudo apt install build-essential
-sudo apt install libcurl4-openssl-dev libsqlite3-dev pkg-config git curl
+sudo apt install build-essential -y
+sudo apt install libcurl4-openssl-dev libsqlite3-dev pkg-config git curl -y
 curl -fsS https://dlang.org/install.sh | bash -s dmd
-sudo apt install libnotify-dev
+sudo apt install libnotify-dev -y
 git clone https://github.com/abraunegg/onedrive.git
 cd onedrive
 ./configure
