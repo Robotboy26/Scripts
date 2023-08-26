@@ -13,5 +13,7 @@ make clean; make;
 sudo make install
 cd ..
 git clone https://github.com/bpozdena/OneDriveGUI.git
-cd OneDriveGUI/src
+cd OneDriveGUI
+pip3 install -r requirements.txt
+cd src
 python3 OneDriveGUI.py
