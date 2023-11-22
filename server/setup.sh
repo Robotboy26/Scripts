@@ -39,6 +39,15 @@ sudo docker build -t robotserver/jellyfin .
 sudo docker run -d -p 8096:8096 robotserver/jellyfin
 sudo ./build -t docker -p ubuntu.amd64 
 
+# samba
+
+sudo apt update -y
+sudo apt install samba -y
+sudo smbpasswd -a samba
+sudo smbpasswd -a samba
+sudo adduser samba
+sudo setfacl -R -m "u:samba:rwx" /home/external
+
 # nextcloud
 # setup
 sudo apt update && sudo apt upgrade -y
